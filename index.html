@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SLOFFDE · 医学院学生会学术实践部</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+       background:linear-gradient(135deg,#00695c 0%,#004d40 100%);min-height:100vh;
+       color:#fff;display:flex;flex-direction:column;align-items:center;
+       padding:48px 20px 24px}
+  .wrap{max-width:760px;width:100%;text-align:center}
+  .logo{font-size:54px;letter-spacing:2px;font-weight:700;margin-bottom:4px}
+  .logo span{color:#ffc107}
+  .sub{font-size:16px;opacity:.85;margin-bottom:8px}
+  .org{font-size:13px;opacity:.7;margin-bottom:40px}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:32px}
+  .card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);
+        border-radius:16px;padding:28px 20px;text-decoration:none;color:#fff;
+        transition:transform .15s,background .15s}
+  .card:hover{transform:translateY(-3px);background:rgba(255,255,255,.2)}
+  .card .t{font-size:22px;font-weight:600;margin-bottom:6px}
+  .card .d{font-size:13px;opacity:.8}
+  .card .e{font-size:11px;opacity:.6;margin-top:10px;font-family:monospace}
+  .disc{font-size:12px;opacity:.75;line-height:1.7;background:rgba(0,0,0,.18);
+        border-left:3px solid #ffc107;padding:10px 14px;border-radius:6px;text-align:left}
+  .foot{font-size:11px;opacity:.55;margin-top:20px}
+  @media(max-width:560px){.cards{grid-template-columns:1fr}.logo{font-size:40px}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo">SLO<span>FFDE</span></div>
+    <div class="sub">本科医学生学习资料共享平台</div>
+    <div class="org">医学院学生会学术实践部</div>
+
+    <div class="cards">
+      <a class="card" href="./pastpapers/">
+        <div class="t">历年题</div>
+        <div class="d">交互式选择题 / 问答卡刷题</div>
+        <div class="e">sloffde.github.io/pastpapers/</div>
+      </a>
+      <a class="card" href="./notes/">
+        <div class="t">学习笔记</div>
+        <div class="d">按年级 / 科目 / 章节浏览，全文搜索</div>
+        <div class="e">sloffde.github.io/notes/</div>
+      </a>
+    </div>
+
+    <div class="disc">
+      ⚠️ 医学免责声明：本站资料由本科生整理，仅供学习交流，<b>不作为临床诊疗依据</b>。
+      内容可能存在错误或过时，请以最新版统编教材与授课为准。使用本站资料产生的任何后果由使用者自负。
+    </div>
+
+    <div class="foot">SLOFFDE · 历年题用 Ginkgo（MIT）构建 · 笔记用 MkDocs Material（MIT）构建</div>
+  </div>
+</body>
+</html>
